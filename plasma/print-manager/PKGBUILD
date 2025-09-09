@@ -42,7 +42,8 @@ validpgpkeys=('E0A3EB202F8E57528E13E72FD7574483BB57B18D'  # Jonathan Esk-Riddell
 
 build() {
   cmake -B build  -S $pkgname-$pkgver \
-    -DBUILD_TESTING=OFF
+    -DBUILD_TESTING=OFF \
+    -DSCP_INSTALL=OFF
   cmake --build build
 }
 
